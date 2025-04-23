@@ -20,10 +20,12 @@
             $.ajax({
               dataType: 'json',
               url: url
-            }).then(function(data) {
+            }).then(function(data) { // los datos que traigo de json se va a guardar en data
 
               for(var i=0; i<data.length; i++){
                 console.log(data[i]);
+
+                // Siempre se debe tener la documentacion para saber con que vas a trabajar o con que no
                 console.log(data[i].Code);
                 console.log(data[i].Name);
               }
